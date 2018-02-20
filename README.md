@@ -38,6 +38,7 @@ openssl pkcs12 -in client.p12 -out client.pem -clcerts -passin pass:foo -passout
 ```
 
 ### Deploy it all!
+(depends on [kd](https://github.com/ukhomeoffice/kd))
 ```bash
 export KUBE_NAMESPACE=my-namespace
 export CA_CRT=$(base64 ca.crt)
